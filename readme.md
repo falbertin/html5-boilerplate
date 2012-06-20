@@ -39,7 +39,7 @@ cd my-project
 git checkout -b ant-build-script
 # Create a new remote called "h5bp-ant-bs".
 # Fetch the build script from the remote repository.
-git remote add -f h5bp-ant-bs git://github.com/h5bp/ant-build-script.git
+git remote add -f h5bp-ant-bs https://github.com/h5bp/ant-build-script.git
 git merge -s ours --no-commit h5bp-ant-bs/master
 # Put the build script into a subdirectory `build/`
 git read-tree --prefix=build/ -u h5bp-ant-bs/master
