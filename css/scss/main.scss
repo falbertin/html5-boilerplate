@@ -63,11 +63,7 @@ body {
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate.
- * Customize the background color to match your design.
- */
+// Remove text-shadow in selection highlight: h5bp.com/i
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -160,12 +156,14 @@ pre {
 
 q {
     quotes: none;
-}
-
-q:before,
-q:after {
-    content: "";
-    content: none;
+	&:before {
+		content: "";
+	    content: none;
+	}
+	&:after {
+	    content: "";
+	    content: none;
+	}
 }
 
 small {
@@ -202,12 +200,13 @@ dd {
     margin: 0 0 0 40px;
 }
 
-nav ul,
-nav ol {
-    list-style: none;
-    list-style-image: none;
-    margin: 0;
-    padding: 0;
+nav {
+	ul, ol {
+    	list-style: none;
+    	list-style-image: none;
+    	margin: 0;
+    	padding: 0;
+	}
 }
 
 // Embedded content
@@ -336,9 +335,7 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
-/* 1. Remove default vertical scrollbar in IE6/7/8/9
- * 2. Allow only vertical resizing
- */
+// Remove default vertical scrollbar in IE6/7/8/9, allow only vertical resizing
 
 textarea {
     overflow: auto;
@@ -376,8 +373,6 @@ td {
 @media only screen and (min-width: 35em) {
     // Style adjustments for viewports that meet the condition
 }
-
-
 
 /* non-semantic helper classes */
 
